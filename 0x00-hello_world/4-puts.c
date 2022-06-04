@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * The comments
+ * main - The comments
+ *
+ * Return: 0 ifeverything went well 
  */
 int main(void)
 {
