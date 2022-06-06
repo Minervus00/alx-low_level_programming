@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/** 
+/**
  * main - describe
  *
  * Return: (0) success
