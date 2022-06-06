@@ -20,7 +20,7 @@ int main(void)
 		printf(" and is greater than 5\n");
 	else if (x == 0)
 		printf(" and is 0\n");
-	else if (0 < x && x < 6)
+	else if (x != 0 && x < 6)
 		printf(" and is less than 6 and not 0\n");
 
 	return (0);
