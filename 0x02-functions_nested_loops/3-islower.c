@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * _islower - printer
@@ -8,7 +9,7 @@
  */
 int _islower(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (isupper(c))
 		return (0);
 	else
 		return (1);
