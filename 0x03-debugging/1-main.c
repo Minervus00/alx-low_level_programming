@@ -10,11 +10,11 @@ int main(void)
 	int i;
 
 	printf("Infinite loop incoming :(\n");
-	
+
 	i = 0;
 
-	while (i < 10) /* i is always less than 10 without incrementation so, infinite loop! */
-        {
+	while (i < 10) /* i is always < 10 so, infinite loop! */
+	{
 		putchar(i);
 	}
 
