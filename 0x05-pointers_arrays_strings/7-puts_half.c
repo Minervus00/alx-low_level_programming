@@ -11,7 +11,6 @@ void puts_half(char *str)
 {
 	int i, n, length = strlen(str);
 
-	printf("str = %s\n", str);
 	if (length > 0)
 	{
 		if (length % 2 != 0)
