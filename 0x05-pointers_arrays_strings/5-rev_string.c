@@ -9,7 +9,7 @@
  */
 void rev_string(char *s)
 {
-	char str_c[100];
+	char str_c[500];
 	int length = strlen(s) - 1, i;
 
 	strcpy(str_c, s);
