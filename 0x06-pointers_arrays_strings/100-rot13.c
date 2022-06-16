@@ -10,7 +10,7 @@
  */
 char *rot13(char *str)
 {
-	int i, n = strlen(str), j;
+	int i, n = strlen(str);
 
 	for (i = 0; i < n; i++)
 	{
