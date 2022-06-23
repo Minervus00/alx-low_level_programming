@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * _puts_recurion - thaaat
+ * _puts_recursion - thaaat
+ * @s: fff
  *
  * Return: nothing
  */
