@@ -44,5 +44,6 @@ char *argstostr(int ac, char **av)
 		qbn[k + j] = '\n';
 		k += j + 1;
 	}
+	free(para);
 	return (qbn);
 }
