@@ -17,3 +17,11 @@ struct dog
 };
 
 #endif /*#ifndef __STRUCT__VAR__H__*/
+
+#ifndef __AR__H__
+#define __AR__H__
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
+#endif /*#ifndef __AR__H__*/
+

@@ -1,3 +1,4 @@
+#define __AR__H__
 #include "dog.h"
 
 /**
