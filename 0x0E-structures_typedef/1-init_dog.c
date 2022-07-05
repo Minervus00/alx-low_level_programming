@@ -1,3 +1,5 @@
+#include "dog.h"
+
 /**
  * init_dog - uuhhwwddd
  * @d: ddss
