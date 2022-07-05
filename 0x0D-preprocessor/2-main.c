@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * print_file_name - thaatttt
+ * main - thaatttt
  *
  * Return: 0 success
  */
-int print_file_name(void)
+int main(void)
 {
 	printf("%s\n", __FILE__);
 	return (0);
