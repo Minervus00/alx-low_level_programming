@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 #ifndef __FUNC__PTR__
 #define __FUNC__PTR__
 
