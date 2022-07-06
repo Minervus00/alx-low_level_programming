@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * print_name - yyy
  * @name: ffxx
@@ -8,4 +10,5 @@
 void print_name(char *name, void (*f)(char *))
 {
 	f(name);
+	printf("\n");
 }
