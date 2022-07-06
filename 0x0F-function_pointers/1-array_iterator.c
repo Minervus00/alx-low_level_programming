@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 /**
  * array_iterator - ojjjxx
  * @array: kk
