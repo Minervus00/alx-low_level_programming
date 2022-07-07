@@ -8,7 +8,7 @@
  *
  * Return: noo
  */
-int (*get_op_func(char *s))(int , int)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int , int)
 	int i;
 
 	i = 0;
-	while(i < 5)
+	while (i < 5)
 	{
 		if (!(strcmp(s, ops[i].op)))
 			return (ops[i].f);
