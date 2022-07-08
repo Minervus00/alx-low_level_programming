@@ -16,7 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 
 	if (separator == NULL)
-		strcpy(sepa, " ");
+		strcpy(sepa, "");
 	else
 		strcpy(sepa, separator);
 
