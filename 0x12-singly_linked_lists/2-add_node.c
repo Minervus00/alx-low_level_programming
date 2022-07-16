@@ -18,7 +18,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new == NULL)
 	{
 		write(1, "Error\n", 6);
-		exit(1);
+		return (NULL);
 	}
 
 	new->str = ((str == NULL) ? "(nil)" : strdup(str));
