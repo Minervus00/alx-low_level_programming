@@ -14,10 +14,10 @@ size_t list_len(const list_t *h)
 	list_t *head;
 
 	head = malloc(sizeof(list_t));
-	if (head == NULL)
+	if (head == NULL || h == NULL)
 	{
 		write(1, "Error\n", 6);
-		return (1);
+		return (0);
 	}
 
 	head->next = h->next;
