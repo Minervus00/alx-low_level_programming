@@ -17,7 +17,7 @@ size_t print_list(const list_t *h)
 	if (head == NULL)
 	{
 		printf("Error\n");
-		return (NULL);
+		return (1);
 	}
 
 	head->str = h->str;
