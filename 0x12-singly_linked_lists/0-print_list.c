@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 	list_t *head;
 
 	head = malloc(sizeof(list_t));
-	if (head == NULL || h == NULL)
+	if (head == NULL)
 	{
 		printf("Error\n");
 		return (NULL);
