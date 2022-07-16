@@ -17,13 +17,13 @@ size_t list_len(const list_t *h)
 	if (head == NULL)
 	{
 		write(1, "Error\n", 6);
-		return (0);
+		return (1);
 	}
 
 	head->next = h->next;
 	do {
 		if (n > 0)
-		head->next = (head->next)->next;
+			head->next = (head->next)->next;
 		n++;
 	} while (head->next != NULL);
 
