@@ -1,5 +1,4 @@
 #include <unistd.h>
-
 #include <stdlib.h>
 #include "lists.h"
 #include <string.h>
@@ -19,13 +18,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new == NULL)
 	{
 		write(1, "Error\n", 6);
-		return (1);
+		exit (1);
 	}
 
 	new->str = ((str == NULL) ? "(nil)" : strdup(str));
 	new->len = strlen(str);
 	new->next = NULL;
-
 	if (*head == NULL)
 		*head = new;
 	else
