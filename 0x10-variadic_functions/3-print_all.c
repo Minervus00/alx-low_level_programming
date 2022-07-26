@@ -29,12 +29,6 @@ void print_all(const char * const format, ...)
 	char *sval, *p;
 	int i = 0, chk;
 
-	if (format == NULL)
-	{
-		printf("Error\n");
-		exit(1);
-	}
-
 	va_start(pmk, format);
 	p = strdup(format);
 	while (*p)
