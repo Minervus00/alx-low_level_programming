@@ -11,7 +11,7 @@
 int main(void)
 {
 	char *s;
-	unsigned long int hash_table_array_size;
+	unsigned long int hash_table_array_size = 1024;
 
 	s = "cisfun";
 	printf("%lu\n", hash_djb2((unsigned char *)s));
