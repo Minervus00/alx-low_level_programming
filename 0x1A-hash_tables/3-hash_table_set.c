@@ -15,9 +15,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new;
 	unsigned long int idx;
 
-	/*key cannot be an empty string*/
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
+	/*key cannot be an empty string*/
 	if (!strcmp(key, ""))
 		return (0);
 
