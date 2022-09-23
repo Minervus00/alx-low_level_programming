@@ -14,8 +14,9 @@ int main(void)
 	char *value;
 
 	ht = hash_table_create(1024);
-	hash_table_set(ht, "c", "fun");
-	hash_table_set(ht, "python", "awesome");
+	if (!hash_table_set(ht, "c", ""))
+		printf("Error\n");
+	/*hash_table_set(ht, "python", "awesome");
 	hash_table_set(ht, "Bob", "and Kris love asm");
 	hash_table_set(ht, "N", "queens");
 	hash_table_set(ht, "Asterix", "Obelix");
@@ -34,7 +35,7 @@ int main(void)
 	value = hash_table_get(ht, "Betty");
 	printf("%s:%s\n", "Betty", value);
 	value = hash_table_get(ht, "98");
-	printf("%s:%s\n", "98", value);
+	printf("%s:%s\n", "98", value);*/
 	value = hash_table_get(ht, "c");
 	printf("%s:%s\n", "c", value);
 	value = hash_table_get(ht, "javascript");
