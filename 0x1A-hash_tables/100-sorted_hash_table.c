@@ -48,7 +48,6 @@ void add_sht_sorted_list(shash_table_t *ht, shash_node_t *snew)
 		prev = buff;
 		buff = buff->snext;
 	}
-
 	snew->snext = buff;
 	snew->sprev = prev;
 	/*snew is the unique node*/
@@ -57,21 +56,18 @@ void add_sht_sorted_list(shash_table_t *ht, shash_node_t *snew)
 		ht->shead = snew;
 		ht->stail = snew;
 	}
-
 	/*snew inserted to the middle*/
 	else if (prev != NULL && buff != NULL)
 	{
 		prev->snext = snew;
 		buff->sprev = snew;
 	}
-
 	/*snew inserted to the top*/
 	else if (buff != NULL)
 	{
 		buff->sprev = snew;
 		ht->shead = snew;
 	}
-
 	/*snew inserted to the end*/
 	else if (prev != NULL)
 	{
