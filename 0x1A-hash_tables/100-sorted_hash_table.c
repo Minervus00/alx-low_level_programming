@@ -125,7 +125,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
  * shash_table_get - retrieves the key value
  * @ht: hash_table
  * @key: the key
- * @value: associated to the key
  * Return: the key's value or NULL if key not found
  */
 char *shash_table_get(const shash_table_t *ht, const char *key)
