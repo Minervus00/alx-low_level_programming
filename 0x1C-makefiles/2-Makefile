@@ -1,0 +1,10 @@
+all: compile
+
+CC := gcc
+SRC := $(wildcard *.c)
+OBJ := $(wildcard *.o)
+NAME := school
+
+#${CC} ${SRC} -o school
+compile:
+	@echo ${OBJ}
