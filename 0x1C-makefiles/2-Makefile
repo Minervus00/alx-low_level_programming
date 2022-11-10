@@ -4,7 +4,7 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 
 # run main.o then school.o
-all: main.o school.o
+all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
 # main.o is produced by main.c with the command below
