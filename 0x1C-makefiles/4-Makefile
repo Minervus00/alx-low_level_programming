@@ -6,7 +6,7 @@ RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: ${OBJ}
-	${CC} ${OBJ} -o school
+	${CC} ${OBJ} -o ${NAME}
 
 $(word 1, ${OBJ}): main.c
 	${CC} ${CFLAGS}	-c -o $@ $<
@@ -15,7 +15,7 @@ $(word 2, ${OBJ}): school.c
 	${CC} ${CFLAGS}	-c -o $@ $<
 
 clean:
-	${RM} *~ ${NAME}
+	${RM} *~ school
 
 oclean:
 	rm -f ${OBJ}
