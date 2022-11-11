@@ -28,9 +28,13 @@ def island_perimeter(grid):
     while(cells):
         j, i = cells.pop(0)
         tested_cells.append((j, i))
+        # print("->", j, i)
         for y, x in [(j, i-1), (j, i+1), (j-1, i), (j+1, i)]:
             if 0 <= y < nrows and 0 <= x < ncols and grid[y][x] == 1:
-                if (y, x) not in tested_cells:
+                # add the current neighbor in in cells if it is not
+                if (y, x) not in tested_cells and (y, x) not in cells:
+                    # print("   ", y, x)
+                    # print(y, x, tested_cells)
                     cells.append((y, x))
                 neighbs += 1
         perim += 4 - neighbs
