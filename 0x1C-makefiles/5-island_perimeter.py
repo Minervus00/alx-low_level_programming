@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+"""Module containing the island_perimeter function"""
+
 
 def island_perimeter(grid):
-    """Returns the perimeter of an island made with horizontally or
-    vertically conneted cells"""
+    """Computes and Returns the perimeter of an island made with horizontally
+    or vertically conneted cells"""
     perim = neighbs = 0
     cells = []
     tested_cells = []
