@@ -33,8 +33,8 @@ int recursive_binary(int *array, int L, int R, int value)
 {
 	int m = 0;
 
-	 if (L <= R)
-	 {
+	if (L <= R)
+	{
 		print_array(array, L, R);
 		m = (int) ((L + R) / 2);
 		if (value == array[m])
