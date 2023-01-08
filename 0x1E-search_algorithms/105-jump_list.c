@@ -64,7 +64,6 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 			return (NULL);
 		tmp = get_node(list, a);
 	}
-
 	printf("Value checked array[%d] = [%d]\n", a, tmp->n);
 	if (tmp->n == value)
 		return (tmp);
