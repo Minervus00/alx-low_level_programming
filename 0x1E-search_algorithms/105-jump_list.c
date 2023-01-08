@@ -36,7 +36,6 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	if (list == NULL)
 		return (NULL);
 
-	/* Encircle the value between 'a' and min(b, n) - 1 */
 	b = ((b < (int) size) ? b : (int) (size - 1));
 	tmp = get_node(list, b);
 	while (tmp->n < value)
@@ -48,7 +47,6 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		printf("Value checked array[%d] = [%d]\n", b, tmp->n);
 		a = b;
 		b += jmp;
-
 		if (a >= (int) size)
 			return (NULL);
 		b = ((b < (int) size) ? b : (int) (size - 1));
