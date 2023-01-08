@@ -3,12 +3,12 @@
 #include <math.h>
 
 /**
- * get_value - retrieve the node at a given index in the list
+ * get_node - retrieve the node at a given index in the list
  * @list: a pointer to the head of the singly linked list
  * @idx: the index to search for
  * Return: the node owning the searched index
  */
-listint_t *get_value(listint_t *list, size_t idx)
+listint_t *get_node(listint_t *list, size_t idx)
 {
 	listint_t *buff = list;
 
@@ -37,12 +37,12 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		return (NULL);
 
 	/* Encircle the value between 'a' and min(b, n) - 1 */
-	while (get_value(
-		list, ((b < (int) size) ? b : (int) (size - 1)))->n < value)
+	b = ((b < (int) size) ? b : (int) (size - 1));
+	tmp = get_node(list, b);
+	while (tmp->n < value)
 	{
-		if (b >= (int) size)
+		if (b == (int) (size - 1))
 			break;
-		tmp = get_value(list, b);
 		if (tmp->n == value)
 			return (tmp);
 		printf("Value checked array[%d] = [%d]\n", b, tmp->n);
@@ -51,17 +51,20 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 
 		if (a >= (int) size)
 			return (NULL);
+		b = ((b < (int) size) ? b : (int) (size - 1));
+		tmp = get_node(list, b);
 	}
+	printf("Value checked array[%d] = [%d]\n", b, tmp->n);
 	printf("Value found between indexes [%d] and [%d]\n", a, b);
 
-	tmp = get_value(list, a);
+	tmp = get_node(list, a);
 	while (tmp->n < value)
 	{
 		printf("Value checked array[%d] = [%d]\n", a, tmp->n);
 		a += 1;
-		if (a == ((b < (int) size) ? b + 1 : (int) size))
+		if (a == (b + 1))
 			return (NULL);
-		tmp = get_value(list, a);
+		tmp = get_node(list, a);
 	}
 
 	printf("Value checked array[%d] = [%d]\n", a, tmp->n);
